@@ -46,7 +46,7 @@ def train():
         transforms.ToTensor(),
     ])
 
-    dataset = KodakDataset(root_dir='data/kodak', transform=transform)
+    dataset = KodakDataset(root_dir='Data/Kodak', transform=transform)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
     from models.autoencoder import Encoder, Decoder
